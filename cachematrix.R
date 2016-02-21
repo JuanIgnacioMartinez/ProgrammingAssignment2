@@ -1,7 +1,7 @@
 ##  This function creates a special "matrix" object that can cache its inverse
 
 ## This function save the inverser of a matrix in the cache so it can be
-## called again whitout all the calculation so it saves time and 
+## called again whitrout all the calculation so it saves time and 
 ## computer requirements.
 ## This function use the following functions: set, get, setmean and getmean.
 
@@ -32,8 +32,9 @@ cacheSolve <- function(x, ...) {
   
   m <- x$getinverse()
   if(!is.null(m)) {
-    message("load cached data")
+
     return(m)
+    
   }
   
   data <- x$get()
